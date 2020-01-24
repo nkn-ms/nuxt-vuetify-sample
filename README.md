@@ -1,5 +1,5 @@
 demo site
-https://heroku-puppeteer-note.herokuapp.com
+https://dreamy-cori-4bb678.netlify.com
 
 # nuxt-vuetify-sample
 
