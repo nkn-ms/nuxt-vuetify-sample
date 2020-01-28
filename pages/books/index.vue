@@ -17,7 +17,7 @@
 
 <script>
 import { mapState } from 'vuex'
-import BookItem from '~/components/bookItem'
+import BookItem from '~/components/bookItem/index'
 
 export default {
   components: {
