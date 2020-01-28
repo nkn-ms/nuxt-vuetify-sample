@@ -2,7 +2,7 @@ import { storiesOf } from '@storybook/vue'
 import Vue from 'vue'
 import BookItem from './index.vue'
 
-Vue.component('book-item', BookItem)
+Vue.component('molecules-book-item', BookItem)
 
 const value = {
   author: '狩野 祐東',
@@ -20,23 +20,11 @@ const value = {
   title: '確かな力が身につくJavaScript「超」入門 第2版'
 }
 
-const value2 = Object.assign({}, value)
-value2.author = 'author'
-
-storiesOf('BookItem', module)
-  .add('default', () => ({
-    data: () => {
-      return {
-        book: value
-      }
-    },
-    template: '<book-item :book="book"></book-item>'
-  }))
-  .add('noData', () => ({
-    data: () => {
-      return {
-        book: value2
-      }
-    },
-    template: '<book-item :book="book"></book-item>'
-  }))
+storiesOf('molecules/BookItem', module).add('default', () => ({
+  data: () => {
+    return {
+      value
+    }
+  },
+  template: '<molecules-book-item :value="value"></molecules-book-item>'
+}))
