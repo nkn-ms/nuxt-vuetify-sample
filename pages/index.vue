@@ -8,7 +8,7 @@
     </li>
     <li>
       here is storybook site:
-      <a href="https://epic-khorana-bfb417.netlify.com/" target="_blank">
+      <a href="https://hopeful-johnson-06d0d1.netlify.com/" target="_blank">
         storybook
       </a>
     </li>
