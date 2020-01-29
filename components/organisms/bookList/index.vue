@@ -1,5 +1,10 @@
 <template>
   <v-layout column justify-center align-center>
+    <v-pagination
+      v-model="page"
+      :length="list.length / pageSize"
+      :input="pageChange"
+    ></v-pagination>
     <v-list two-line min-width="600px" max-width="900px">
       <template
         v-for="(item, index) in list.slice(

@@ -16,15 +16,11 @@ async function getBookList() {
 let value = []
 getBookList().then((result) => (value = result.slice()))
 
-storiesOf('organisms/BookList', module)
-  .add('default', () => ({
-    data: () => {
-      return {
-        bookList: value
-      }
-    },
-    template: '<organisms-book-list :list="bookList"></organisms-book-list>'
-  }))
-  .add('noData', () => ({
-    template: '<organisms-book-list></organisms-book-list>'
-  }))
+storiesOf('organisms/BookList', module).add('default', () => ({
+  data: () => {
+    return {
+      bookList: value
+    }
+  },
+  template: '<organisms-book-list :list="bookList"></organisms-book-list>'
+}))

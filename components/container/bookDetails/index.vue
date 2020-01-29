@@ -15,7 +15,7 @@ export default {
   },
   async beforeMount() {
     const result = await this.$axios.$get(
-      `https://app.rakuten.co.jp/services/api/BooksBook/Search/20170404?applicationId=1016170938031993234&isbn=${this.route.params.id}`
+      `https://app.rakuten.co.jp/services/api/BooksBook/Search/20170404?applicationId=${process.env.rakutenId}&isbn=${this.route.params.id}`
     )
     const { Item } = result.Items[0]
     await this.$store.dispatch('books/addBookDetails', Item)

@@ -1,6 +1,5 @@
 import colors from 'vuetify/es5/util/colors'
 require('dotenv').config()
-const { API } = process.env
 const { rakutenId } = process.env
 
 export default {
@@ -55,7 +54,6 @@ export default {
     '@nuxtjs/axios'
   ],
   env: {
-    API,
     rakutenId
   },
   /*
