@@ -62,7 +62,7 @@ export default {
         },
         {
           icon: 'mdi-book-open-page-variant',
-          title: 'List',
+          title: 'BookList',
           to: '/books'
         }
       ],
