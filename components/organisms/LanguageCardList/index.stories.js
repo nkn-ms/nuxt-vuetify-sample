@@ -1,5 +1,5 @@
-import { storiesOf } from '@storybook/vue'
 import Vue from 'vue'
+import { storiesOf } from '@storybook/vue'
 import LanguageCardList from './index.vue'
 
 Vue.component('organisms-language-card-list', LanguageCardList)
