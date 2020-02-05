@@ -6,7 +6,9 @@
       </v-list-item-avatar>
     </nuxt-link>
     <v-list-item-content>
-      <v-list-item-title v-text="value.title"></v-list-item-title>
+      <nuxt-link :to="`/books/${value.isbn}`">
+        <v-list-item-title v-text="value.title"></v-list-item-title>
+      </nuxt-link>
       <v-list-item-subtitle
         v-text="value.author"
         class="text--primary"
