@@ -58,11 +58,11 @@ export default {
         {
           icon: 'mdi-chart-bubble',
           title: 'Dashboard',
-          to: '/inspire'
+          to: '/dashboard'
         },
         {
           icon: 'mdi-book-open-page-variant',
-          title: 'Books',
+          title: 'List',
           to: '/books'
         }
       ],

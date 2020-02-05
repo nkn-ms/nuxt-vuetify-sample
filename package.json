@@ -11,7 +11,7 @@
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "test": "jest",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -s ./static -p 6006",
     "build-storybook": "build-storybook"
   },
   "lint-staged": {
@@ -25,7 +25,9 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
     "@storybook/addon-knobs": "^5.3.9",
+    "chart.js": "^2.9.3",
     "nuxt": "^2.0.0",
+    "vue-chartjs": "^3.5.0",
     "vuex-persistedstate": "^2.7.0",
     "vuex-router-sync": "^5.0.0"
   },
