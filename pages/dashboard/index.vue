@@ -1,15 +1,18 @@
 <template>
   <v-container>
     <language-card-list :list="value"></language-card-list>
+    <chart-area></chart-area>
   </v-container>
 </template>
 
 <script>
 import LanguageCardList from '~/components/organisms/LanguageCardList/index'
+import ChartArea from '~/components/organisms/chartArea/index'
 
 export default {
   components: {
-    LanguageCardList
+    LanguageCardList,
+    ChartArea
   },
   data: () => {
     return {
