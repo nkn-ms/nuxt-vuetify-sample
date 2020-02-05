@@ -1,5 +1,4 @@
-module.exports = {
-  // stories: ['../stories/**/*.stories.js'],
-  stories: ['../components/**/*.stories.js'],
-  addons: ['@storybook/addon-actions', '@storybook/addon-links'],
-};
+// module.exports = {
+//   stories: ['../components/**/*.stories.js'],
+//   addons: ['@storybook/addon-actions', '@storybook/addon-links'],
+// };

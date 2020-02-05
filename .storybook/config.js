@@ -1,4 +1,5 @@
 import { configure, addDecorator } from '@storybook/vue'
+import { action } from '@storybook/addon-actions'
 
 // 追加
 import Vue from 'vue'
@@ -15,16 +16,6 @@ Vue.component('nuxt-link', {
   template: '<a href="#" @click.prevent="log()"><slot>NuxtLink</slot></a>'
 })
 
-// Vue.component('router-link', {
-//   props: ['to'],
-//   methods: {
-//     log() {
-//       action('link target')(this.to)
-//     }
-//   },
-//   template: '<a href="#" @click.prevent="log()"><slot>RouterLink</slot></a>'
-// })
-
 // 依存注入
 Vue.use(Vuetify)
 
@@ -40,5 +31,4 @@ addDecorator(() => ({
 }))
 
 // automatically import all files ending in *.stories.js
-// configure(require.context('../stories', true, /\.stories\.js$/), module)
 configure(require.context('../components', true, /\.stories\.js$/), module)
