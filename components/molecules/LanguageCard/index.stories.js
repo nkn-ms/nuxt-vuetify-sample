@@ -10,7 +10,7 @@ const value = {
   image: '/languages/javascript.svg'
 }
 
-storiesOf('molecules/languageCard', module).add('default', () => ({
+storiesOf('molecules/LanguageCard', module).add('default', () => ({
   data: () => {
     return {
       value
