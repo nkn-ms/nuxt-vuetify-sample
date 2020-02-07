@@ -2,7 +2,7 @@
   <v-row>
     <v-col cols="4">
       <v-card>
-        <bar-chart :data="barData"></bar-chart>
+        <bar-chart :data="barData" :options="barOptions"></bar-chart>
       </v-card>
     </v-col>
     <v-col cols="4">
@@ -53,11 +53,22 @@ export default {
           }
         ]
       },
+      barOptions: {
+        scales: {
+          yAxes: [
+            {
+              ticks: {
+                beginAtZero: true
+              }
+            }
+          ]
+        }
+      },
       pieData: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['JavaScript', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
         datasets: [
           {
-            data: [15, 9, 3, 5, 2, 3],
+            data: [678928, 473227, 340910, 199223, 180763, 145903],
             backgroundColor: [
               'rgba(255, 99, 132, 0.2)',
               'rgba(54, 162, 235, 0.2)',
