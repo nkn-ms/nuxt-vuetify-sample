@@ -2,17 +2,20 @@
   <v-container>
     <language-card-list :list="value"></language-card-list>
     <chart-area></chart-area>
+    <data-tables></data-tables>
   </v-container>
 </template>
 
 <script>
 import LanguageCardList from '~/components/organisms/LanguageCardList/index'
 import ChartArea from '~/components/organisms/ChartArea/index'
+import DataTables from '~/components/organisms/DataTables/index'
 
 export default {
   components: {
     LanguageCardList,
-    ChartArea
+    ChartArea,
+    DataTables
   },
   data: () => {
     return {

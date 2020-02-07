@@ -64,6 +64,11 @@ export default {
           icon: 'mdi-book-open-page-variant',
           title: 'BookList',
           to: '/books'
+        },
+        {
+          icon: 'mdi-book-open-page-variant',
+          title: 'DataTables',
+          to: '/dataTables'
         }
       ],
       right: true,
