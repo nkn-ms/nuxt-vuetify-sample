@@ -1,5 +1,5 @@
 <template>
-  <organisms-book-details :value="books.details"> </organisms-book-details>
+  <organisms-book-details :value="value"> </organisms-book-details>
 </template>
 
 <script>
@@ -10,15 +10,21 @@ export default {
   components: {
     organismsBookDetails
   },
+  data: () => {
+    return {
+      value: {}
+    }
+  },
   computed: {
     ...mapState(['books', 'route'])
   },
   async beforeMount() {
-    const result = await this.$axios.$get(
-      `https://app.rakuten.co.jp/services/api/BooksBook/Search/20170404?applicationId=${process.env.rakutenId}&isbn=${this.route.params.id}`
+    if (this.books.list.length === 0) {
+      await this.$store.dispatch('books/getBookList')
+    }
+    this.value = await this.books.list.find(
+      (book) => book.isbn === this.route.params.id
     )
-    const { Item } = result.Items[0]
-    await this.$store.dispatch('books/addBookDetails', Item)
   }
 }
 </script>
