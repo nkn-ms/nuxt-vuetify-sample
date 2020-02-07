@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import containerBookDetails from '~/components/container/bookDetails/index'
+import containerBookDetails from '~/container/BookDetails/index'
 
 export default {
   components: {

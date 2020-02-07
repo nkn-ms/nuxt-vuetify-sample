@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import moleculesBookItem from '~/components/molecules/bookItem/index.vue'
+import moleculesBookItem from '~/components/molecules/BookItem/index'
 
 export default {
   components: {

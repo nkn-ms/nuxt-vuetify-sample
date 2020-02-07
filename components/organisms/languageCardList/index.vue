@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import LanguageCardList from '~/components/molecules/languageCard/index'
+import LanguageCardList from '~/components/molecules/LanguageCard/index'
 
 export default {
   components: {

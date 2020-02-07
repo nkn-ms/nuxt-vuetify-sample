@@ -7,7 +7,7 @@
 
 <script>
 import LanguageCardList from '~/components/organisms/LanguageCardList/index'
-import ChartArea from '~/components/organisms/chartArea/index'
+import ChartArea from '~/components/organisms/ChartArea/index'
 
 export default {
   components: {
@@ -39,10 +39,6 @@ export default {
         }
       ]
     }
-  },
-  mounted() {
-    console.log(this.$vuetify)
-    console.log(this.$vuetify.breakpoint)
   }
 }
 </script>
