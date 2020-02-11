@@ -13,7 +13,7 @@ export const actions = {
     commit('addBooks', books)
   },
   async getBookList({ commit }) {
-    // localStorageにすでにある場合はそこから取得する
+    // localStorageにすでにある場合はそこから取得する。localstorageにアクセスする場合、mountedのタイミングでしか使えない
     const { books } =
       localStorage.length !== 0
         ? JSON.parse(localStorage.vuex)

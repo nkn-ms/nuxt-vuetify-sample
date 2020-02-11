@@ -1,9 +1,10 @@
 import colors from 'vuetify/es5/util/colors'
+import axios from 'axios'
 require('dotenv').config()
 const { rakutenId } = process.env
 
 export default {
-  mode: 'universal',
+  mode: 'spa', // サーバサイドレンダリングをしない、nuxt generate する
   /*
    ** Headers of the page
    */
@@ -53,6 +54,9 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios'
   ],
+  /**
+   * configuration .env
+   */
   env: {
     rakutenId
   },
@@ -80,6 +84,26 @@ export default {
           success: colors.green.accent3
         }
       }
+    }
+  },
+  /*
+   ** generate configuration
+   */
+  generate: {
+    routes() {
+      return axios
+        .get(
+          `https://app.rakuten.co.jp/services/api/BooksBook/Search/20170404?applicationId=${process.env.rakutenId}&title=javascript`
+        )
+        .then((res) => {
+          return res.data.Items.map((e) => {
+            const book = e.Item
+            return {
+              route: '/books/' + book.isbn,
+              payload: book
+            }
+          })
+        })
     }
   },
   /*

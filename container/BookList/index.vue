@@ -13,7 +13,8 @@ export default {
   computed: {
     ...mapState(['books'])
   },
-  async beforeCreate() {
+  async mounted() {
+    // localstorageにアクセスするのでmounted
     await this.$store.dispatch('books/getBookList')
   }
 }

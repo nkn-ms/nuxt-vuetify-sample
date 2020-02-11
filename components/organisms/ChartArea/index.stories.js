@@ -8,5 +8,5 @@ storiesOf('organisms/ChartArea', module).add('default', () => ({
   data: () => {
     return {}
   },
-  template: '<organisms-chart-area :list="languageList"></organisms-chart-area>'
+  template: '<organisms-chart-area></organisms-chart-area>'
 }))

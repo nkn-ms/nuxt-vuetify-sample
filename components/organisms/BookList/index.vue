@@ -5,7 +5,7 @@
       :length="list.length / pageSize"
       :input="pageChange"
     ></v-pagination>
-    <v-list two-line min-width="600px" max-width="900px">
+    <v-list two-line min-width="600px" max-width="800px">
       <template
         v-for="(item, index) in list.slice(
           pageSize * (page - 1),
@@ -15,7 +15,6 @@
         <molecules-book-item
           :value="item"
           :key="item.title"
-          :width="800"
         ></molecules-book-item>
         <v-divider v-if="index + 1 < pageSize" :key="index"></v-divider>
       </template>

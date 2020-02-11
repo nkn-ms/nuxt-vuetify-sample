@@ -1,12 +1,12 @@
 <template>
-  <v-card class="mx-auto" max-width="344">
+  <v-card class="mx-auto" max-width="360">
     <v-list-item>
       <v-list-item-content>
         <v-list-item-title class="headline mb-2">
           {{ value.title }}
         </v-list-item-title>
-        <div class="display-1 ml-4">{{ value.count }}</div>
-        <div class="ml-11 body-1 font-italic font-regular">
+        <div class="display-1 text-center">{{ value.count }}</div>
+        <div class="text-right body-1 font-italic font-regular">
           repositories
         </div>
       </v-list-item-content>

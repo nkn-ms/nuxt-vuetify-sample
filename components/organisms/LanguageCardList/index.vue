@@ -8,17 +8,19 @@
       </a>
     </v-col>
     <v-col v-for="item in list" :key="item.title" :lg="lgCol()" sm="6" md="6">
-      <language-card-list :value="item"></language-card-list>
+      <molecules-language-card-list
+        :value="item"
+      ></molecules-language-card-list>
     </v-col>
   </v-row>
 </template>
 
 <script>
-import LanguageCardList from '~/components/molecules/LanguageCard/index'
+import MoleculesLanguageCardList from '~/components/molecules/LanguageCard/index'
 
 export default {
   components: {
-    LanguageCardList
+    MoleculesLanguageCardList
   },
   props: {
     list: {
@@ -37,7 +39,7 @@ export default {
     },
     lgCol() {
       let cols = 3
-      if (this.width >= 1264 && this.width <= 1434) {
+      if (this.width >= 1264 && this.width <= 1360) {
         cols = 6
       }
       return cols
