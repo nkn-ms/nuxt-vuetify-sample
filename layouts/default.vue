@@ -66,7 +66,7 @@ export default {
           to: '/books'
         },
         {
-          icon: 'mdi-book-open-page-variant',
+          icon: 'mdi-table-large',
           title: 'DataTables',
           to: '/dataTables'
         }
