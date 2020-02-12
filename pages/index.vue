@@ -8,7 +8,10 @@
     </li>
     <li>
       here is storybook site:
-      <a href="https://hopeful-johnson-06d0d1.netlify.com/" target="_blank">
+      <a
+        href="https://storybook-nuxt-vuetify-sample.netlify.com/"
+        target="_blank"
+      >
         storybook
       </a>
     </li>
