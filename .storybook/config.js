@@ -1,10 +1,10 @@
 import { configure, addDecorator } from '@storybook/vue'
 import { action } from '@storybook/addon-actions'
 
-// 追加
 import Vue from 'vue'
 import Vuetify from 'vuetify'
-import 'vuetify/dist/vuetify.css' // →これ重要
+import 'vuetify/dist/vuetify.css'
+import index from '~/pages/index'
 
 Vue.component('nuxt-link', {
   props: ['to'],
@@ -24,6 +24,11 @@ Vue.component('router-link', {
     }
   },
   template: '<a href="#" @click.prevent="log()"><slot>RouterLink</slot></a>'
+})
+// layouts/default.vueのerrorメッセージ対応、本番と同様にするならば、pages下のcomponentを動的に表示させる。defaultでinformation、それ以外はサイドバーonClickで切替え
+Vue.component('index', index )
+Vue.component('nuxt', {
+  template: '<index/>'
 })
 
 // 依存注入
