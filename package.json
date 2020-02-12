@@ -24,7 +24,6 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
-    "@storybook/addon-knobs": "^5.3.9",
     "chart.js": "^2.9.3",
     "nuxt": "^2.0.0",
     "vue-chartjs": "^3.5.0",
@@ -39,6 +38,7 @@
     "@nuxtjs/stylelint-module": "^3.1.0",
     "@nuxtjs/vuetify": "^1.10.2",
     "@storybook/addon-actions": "^5.3.9",
+    "@storybook/addon-knobs": "^5.3.13",
     "@storybook/addon-links": "^5.3.9",
     "@storybook/addons": "^5.3.9",
     "@storybook/vue": "^5.3.9",

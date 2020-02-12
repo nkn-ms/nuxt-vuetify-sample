@@ -1,5 +1,7 @@
 import { configure, addDecorator } from '@storybook/vue'
 import { action } from '@storybook/addon-actions'
+import { withKnobs, text, boolean } from '@storybook/addon-knobs';
+
 
 import Vue from 'vue'
 import Vuetify from 'vuetify'
@@ -33,8 +35,20 @@ Vue.component('nuxt', {
 
 // 依存注入
 Vue.use(Vuetify)
-
+addDecorator(
+  withKnobs()
+)
 addDecorator(() => ({
+  props: {
+    dark: {
+      default: boolean('Dark Theme', false)
+    },
+  },
+  watch: {
+    dark(val) {
+      this.$vuetify.theme.dark = val
+    },
+  },
   vuetify: new Vuetify(),
   template: `
 <v-app>
@@ -44,6 +58,8 @@ addDecorator(() => ({
 </v-app>
 `
 }))
+
+
 
 // automatically import all files ending in *.stories.js
 configure(require.context('../components', true, /\.stories\.js$/), module)
