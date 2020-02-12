@@ -35,9 +35,8 @@ Vue.component('nuxt', {
 
 // 依存注入
 Vue.use(Vuetify)
-addDecorator(
-  withKnobs()
-)
+addDecorator(withKnobs)
+// dark thme switcher https://github.com/vuetifyjs/vue-cli-plugin-vuetify-storybook/issues/4
 addDecorator(() => ({
   props: {
     dark: {
