@@ -6,7 +6,7 @@ import LayoutError from '~/layouts/error.vue'
 Vue.component('organisms-layout-default', LayoutDefault)
 Vue.component('organisms-layout-error', LayoutError)
 
-storiesOf('organisms/Layout', module)
+storiesOf('organisms/LayoutDefault', module)
   .add('default', () => ({
     data: () => {
       return {}
@@ -23,5 +23,5 @@ storiesOf('organisms/Layout', module)
     data: () => {
       return { error: { statusCode: 'others' } }
     },
-    template: '<organisms-layout-error :error="error"></organisms-layout-error>'
+    template: '<molecules-layout-error :error="error"></molecules-layout-error>'
   }))
