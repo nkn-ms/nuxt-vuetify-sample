@@ -30,6 +30,7 @@
 
       <v-toolbar-title v-text="title" />
       <v-spacer />
+      <user-menu></user-menu>
     </v-app-bar>
     <v-content>
       <v-container>
@@ -43,7 +44,12 @@
 </template>
 
 <script>
+import UserMenu from '~/components/molecules/UserMenu/index'
+
 export default {
+  components: {
+    UserMenu
+  },
   data() {
     return {
       clipped: true,
