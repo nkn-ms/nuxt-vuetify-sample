@@ -6,6 +6,7 @@
       <v-text-field
         v-model="search"
         label="Search"
+        append-icon="mdi-magnify"
         single-line
         hide-details
       ></v-text-field>
