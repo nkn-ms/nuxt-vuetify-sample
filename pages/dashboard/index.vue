@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container fluid>
     <organisms-language-card-list
       :list="languageList"
     ></organisms-language-card-list>

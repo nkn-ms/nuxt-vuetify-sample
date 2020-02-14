@@ -58,8 +58,8 @@ export default {
       items: [
         {
           icon: 'mdi-apps',
-          title: 'Information',
-          to: '/'
+          title: 'Welcome',
+          to: '/welcome'
         },
         {
           icon: 'mdi-chart-bubble',
