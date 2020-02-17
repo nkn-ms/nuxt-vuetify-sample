@@ -3,6 +3,7 @@
     <v-col cols="12">
       <a
         href="https://github.com/search?q=stars%3A%3E1&s=stars&type=Repositories"
+        target="_blank"
       >
         Number of repositories by language more than 1 star
       </a>

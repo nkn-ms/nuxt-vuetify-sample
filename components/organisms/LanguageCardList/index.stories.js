@@ -7,22 +7,22 @@ Vue.component('organisms-language-card-list', LanguageCardList)
 const value = [
   {
     title: 'JavaScript',
-    count: 678928,
+    count: 683080,
     image: '/languages/javascript.svg'
   },
   {
     title: 'Python',
-    count: 473227,
+    count: 477631,
     image: '/languages/python-5.svg'
   },
   {
     title: 'Java',
-    count: 340910,
+    count: 342618,
     image: '/languages/java-4.svg'
   },
   {
     title: 'PHP',
-    count: 199223,
+    count: 200127,
     image: '/languages/php-1.svg'
   }
 ]
