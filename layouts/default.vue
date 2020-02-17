@@ -59,7 +59,7 @@ export default {
         {
           icon: 'mdi-apps',
           title: 'Welcome',
-          to: '/welcome'
+          to: '/'
         },
         {
           icon: 'mdi-chart-bubble',

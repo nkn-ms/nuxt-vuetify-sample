@@ -1,5 +1,8 @@
 demo site
-https://dreamy-cori-4bb678.netlify.com
+https://nuxt-vuetify-sample.netlify.com
+
+storybook site
+https://storybook-nuxt-vuetify-sample.netlify.com/
 
 # nuxt-vuetify-sample
 

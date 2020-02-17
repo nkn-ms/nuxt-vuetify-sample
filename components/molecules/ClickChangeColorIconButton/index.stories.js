@@ -15,7 +15,7 @@ storiesOf('molecules/ClickChangeColorIconButton', module)
     template:
       '<molecules-click-change-color-icon-button></molecules-click-change-color-icon-button>'
   }))
-  .add('props', () => ({
+  .add('props:icon, iconColor', () => ({
     data: () => {
       return {
         icon: 'mdi-magnify',

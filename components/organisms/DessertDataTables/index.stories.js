@@ -87,10 +87,10 @@ const list = [
   }
 ]
 storiesOf('organisms/DessertDataTables', module)
-  .add('no data', () => ({
+  .add('default', () => ({
     template: '<organisms-dessert-data-tables></organisms-dessert-data-tables>'
   }))
-  .add('default', () => ({
+  .add('data:list', () => ({
     data: () => {
       return { list }
     },

@@ -11,7 +11,7 @@ storiesOf('molecules/HeddenSearchForm', module)
     },
     template: '<molecules-hedden-search-form></molecules-hedden-search-form>'
   }))
-  .add('props', () => ({
+  .add('props:placeholder', () => ({
     data: () => {
       return {
         placeholder: 'welcome'

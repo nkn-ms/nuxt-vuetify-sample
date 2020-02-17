@@ -6,7 +6,7 @@ import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 import Vue from 'vue'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.css'
-import welcome from '~/pages/welcome/index'
+import index from '~/pages/index'
 
 Vue.component('nuxt-link', {
   props: ['to'],
@@ -28,9 +28,9 @@ Vue.component('router-link', {
   template: '<a href="#" @click.prevent="log()"><slot>RouterLink</slot></a>'
 })
 // layouts/default.vueのerrorメッセージ対応、本番と同様にするならば、pages下のcomponentを動的に表示させる。defaultでinformation、それ以外はサイドバーonClickで切替え
-Vue.component('welcome', welcome )
+Vue.component('index', index )
 Vue.component('nuxt', {
-  template: '<welcome/>'
+  template: '<index/>'
 })
 
 // 依存注入

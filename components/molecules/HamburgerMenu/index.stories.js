@@ -5,13 +5,13 @@ import HambugerMenu from './index.vue'
 Vue.component('molecules-hambuger-menu', HambugerMenu)
 
 storiesOf('molecules/HambugerMenu', module)
-  .add('no data', () => ({
+  .add('default', () => ({
     data: () => {
       return {}
     },
     template: '<molecules-hambuger-menu></molecules-hambuger-menu>'
   }))
-  .add('props', () => ({
+  .add('props:list', () => ({
     data: () => {
       return {
         list: [{ title: 'Welcome' }, { title: 'Welcome' }, { title: 'Welcome' }]
