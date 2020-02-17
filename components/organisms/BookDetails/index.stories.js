@@ -16,14 +16,14 @@ const value = {
   salesDate: '2017年01月20日',
   itemPrice: 3520,
   itemUrl: 'https://books.rakuten.co.jp/rb/14640299/',
-  smallImageUrl:
+  largeImageUrl:
     'https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7836/9784873117836.jpg?_ex=64x64',
   reviewCount: 3,
   reviewAverage: '4.67',
   booksGenreId: '001005003008/001005005009'
 }
 
-storiesOf('organisms/BookDdtails', module).add('default', () => ({
+storiesOf('organisms/BookDetails', module).add('default', () => ({
   data: () => {
     return {
       details: value
