@@ -17,7 +17,7 @@ const value = {
   itemPrice: 3520,
   itemUrl: 'https://books.rakuten.co.jp/rb/14640299/',
   largeImageUrl:
-    'https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7836/9784873117836.jpg?_ex=64x64',
+    'https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7836/9784873117836.jpg?_ex=200x200',
   reviewCount: 3,
   reviewAverage: '4.67',
   booksGenreId: '001005003008/001005005009'
